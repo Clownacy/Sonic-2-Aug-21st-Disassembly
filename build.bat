@@ -2,7 +2,7 @@
 
 echo Build Started
 
-asm68k /k /p /o ae- sonic2alpha.asm, s2built.bin
+asm68k /k /p /o ae- sonic2alpha.asm, s2built.bin, , s2built.lst
 IF NOT EXIST s2built.bin goto LABLERR
 rompad.exe s2built.bin
 fixheadr.exe s2built.bin
