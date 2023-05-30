@@ -21631,7 +21631,7 @@ Art_GHz_Masher:                                                ; Offset_0x082EE0
 Art_Robotnik_Ship:                                             ; Offset_0x0830EC
 		incbin  'art/nemesis/robotnik.nem'
 Art_CPz_Boss:                                                  ; Offset_0x083828
-		incbin  'art/nemesis/boss.nem'
+		incbin  'art/nemesis/cpzboss.nem'
 Art_Boss_Explosions:                                           ; Offset_0x083D86
 		incbin  'art/nemesis/explosns.nem'
 Art_Ship_Boost:                                                ; Offset_0x08440E
