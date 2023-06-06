@@ -6163,7 +6163,7 @@ Bg_Scroll_GHz_Act_2:                                           ; Offset_0x00606A
 		subq.w  #$01, ($FFFFA800).w
 Offset_0x006078:
 		move.w  (Camera_Y_x4).w, ($FFFFF618).w               ; $FFFFEE0C
-		andi.l  #$FFFFFFFEFFFE, ($FFFFF616).w
+		andi.l  #$FFFEFFFE, ($FFFFF616).w
 		lea     (Scroll_Buffer_Data).w, A1                   ; $FFFFE000
 		move.w  (Camera_X).w, D0                             ; $FFFFEE00
 		move.w  #$000A, D1
@@ -6173,7 +6173,7 @@ Offset_0x006078:
 		subi.w  #$00E0, ($FFFFF620).w
 		move.w  (Camera_Y_2).w, ($FFFFF61E).w                ; $FFFFEE24
 		subi.w  #$00E0, ($FFFFF61E).w
-		andi.l  #$FFFFFFFEFFFE, ($FFFFF61E).w
+		andi.l  #$FFFEFFFE, ($FFFFF61E).w
 		lea     ($FFFFE1B0).w, A1
 		move.w  (Camera_X_2).w, D0                           ; $FFFFEE20
 		move.w  #$000E, D1
@@ -6475,7 +6475,7 @@ Bg_Scroll_HTz_Act_2                                            ; Offset_0x00637C
 		bsr     Scroll_Block_1                         ; Offset_0x006DC8
 		move.b  #$00, (Scroll_Flag_Array+$0002).w            ; $FFFFEE52
 		move.w  (Camera_Y_x4).w, ($FFFFF618).w               ; $FFFFEE0C
-		andi.l  #$FFFFFFFEFFFE, ($FFFFF616).w
+		andi.l  #$FFFEFFFE, ($FFFFF616).w
 		lea     (Scroll_Buffer_Data).w, A1                   ; $FFFFE000
 		move.w  #$006F, D1
 		move.w  (Camera_X).w, D0                             ; $FFFFEE00
@@ -6495,7 +6495,7 @@ Offset_0x0063BC:
 		subi.w  #$00E0, ($FFFFF620).w
 		move.w  (Camera_Y_2).w, ($FFFFF61E).w                ; $FFFFEE24
 		subi.w  #$00E0, ($FFFFF61E).w
-		andi.l  #$FFFFFFFEFFFE, ($FFFFF61E).w
+		andi.l  #$FFFEFFFE, ($FFFFF61E).w
 		lea     ($FFFFE1B0).w, A1
 		move.w  #$0073, D1
 		move.w  (Camera_X_2).w, D0                           ; $FFFFEE20
@@ -6761,7 +6761,7 @@ Bg_Scroll_DHz_2P_Act_2:                                        ; Offset_0x006678
 Bg_Scroll_DHz_2P_1:                                            ; Offset_0x006680
 		move.w  D0, (Camera_Y_x4).w                          ; $FFFFEE0C
 		move.w  D0, ($FFFFF618).w
-		andi.l  #$FFFFFFFEFFFE, ($FFFFF616).w
+		andi.l  #$FFFEFFFE, ($FFFFF616).w
 		lea     ($FFFFA800).w, A2
 		lea     $001E(A2), A3
 		move.w  (Camera_X).w, D0                             ; $FFFFEE00
@@ -6873,7 +6873,7 @@ Offset_0x0067A4:
 		subi.w  #$00E0, ($FFFFF620).w
 		move.w  (Camera_Y_2).w, ($FFFFF61E).w                ; $FFFFEE24
 		subi.w  #$00E0, ($FFFFF61E).w
-		andi.l  #$FFFFFFFEFFFE, ($FFFFF61E).w
+		andi.l  #$FFFEFFFE, ($FFFFF61E).w
 		lea     ($FFFFA800).w, A2
 		lea     $001E(A2), A3
 		move.w  (Camera_X_2).w, D0                           ; $FFFFEE20
@@ -6999,7 +6999,7 @@ Bg_Scroll_CNz_2P:                                              ; Offset_0x0068E8
 		moveq   #$00, D5
 		bsr     Scroll_Block_1                         ; Offset_0x006DC8
 		move.w  (Camera_Y_x4).w, ($FFFFF618).w               ; $FFFFEE0C
-		andi.l  #$FFFFFFFEFFFE, ($FFFFF616).w
+		andi.l  #$FFFEFFFE, ($FFFFF616).w
 		lea     (Scroll_Buffer_Data).w, A1                   ; $FFFFE000
 		move.w  #$006F, D1
 		move.w  (Camera_X).w, D0                             ; $FFFFEE00
@@ -7019,7 +7019,7 @@ Offset_0x006922:
 		subi.w  #$00E0, ($FFFFF620).w
 		move.w  (Camera_Y_2).w, ($FFFFF61E).w                ; $FFFFEE24
 		subi.w  #$00E0, ($FFFFF61E).w
-		andi.l  #$FFFFFFFEFFFE, ($FFFFF61E).w
+		andi.l  #$FFFEFFFE, ($FFFFF61E).w
 		lea     ($FFFFE1B0).w, A1
 		move.w  #$0073, D1
 		move.w  (Camera_X_2).w, D0                           ; $FFFFEE20
